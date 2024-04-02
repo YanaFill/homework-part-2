@@ -1,0 +1,30 @@
+.notebox  {
+    border: 5px solid gray;
+    padding: 5px;
+    margin-top: 20px;
+
+}
+
+.warning {
+    border-color: orange;
+    font-weight: bold;
+}
+
+.danger {
+    border-color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+li[class] {
+    font-size: 200%;
+}
+li[class="a"] {
+    background-color: yellow;
+}
+li[class*="a"] {
+    color: red;
+}

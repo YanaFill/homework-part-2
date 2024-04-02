@@ -1,0 +1,51 @@
+    h1 {
+        color: deeppink;
+        border-bottom: 10px dotted purple;
+    }
+    .job-title {
+        font-size: 30px;
+        color: grey;
+    }
+    ul {
+        border: 5px solid purple;
+        padding: 20px;
+    }
+    img:hover {
+        border: 3px solid darkred;
+        border-radius: 10px;
+    }
+    p.first::first-letter{
+        color: green;
+        font-size: 500%;
+        font-weight: bold;
+    }
+    p.second::first-line {
+        content: attr(data-last-line);
+        display: block;
+        font-size: 30px;
+        color: lightseagreen;
+        font-style: italic;
+    }
+    a:link {
+        color: darkblue;
+    }
+    a:visited {
+        color: orange;
+    }
+    a:active {
+        color: green;
+    }
+    h2::after {
+        content: " :)";
+    }
+    h1::before {
+        content: "About ";
+        color: deeppink;
+        font-style: italic;
+    }
+    h2 {
+        font-style: italic;
+    }
+    ul {
+        background-color: lightgrey;
+    }
