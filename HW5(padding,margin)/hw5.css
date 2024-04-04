@@ -1,0 +1,52 @@
+/*1*/
+
+.decor {
+    list-style-position: inside;
+    background-color: #EF9EAF;
+    padding: 15px;
+
+}
+span {
+    background-color: #9F344B;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+li  {
+    margin: 10px;
+    background-color: #C66377;
+    padding: 5px;
+}
+
+/*2*/
+.container {
+    border: 5px solid blue;
+}
+.container > p {
+    font-size: 1.5rem;
+}
+/*відстань між параграфами 50px
+якщо в .one додати margin-top: -20px; то відстань між ними не змінюється. А зверху параграф вийшов за .container*/
+
+
+.one {
+    margin-bottom: 50px;
+    border: 5px solid purple;
+    padding: 5px;
+    background-color: #D3D3D3;
+}
+
+.two {
+    margin-top: 30px;
+    border: 5px solid purple;
+    padding: 5px;
+    background-color: #D3D3D3;
+}
+
+div.container:last-of-type > p {
+    display: inline-block;
+}
+div {
+    margin-top: 15px;
+    box-shadow: 9px 5px 6px 3px #888;
+}
