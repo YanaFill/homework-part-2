@@ -16,6 +16,16 @@ span {
     letter-spacing: 5px;
 }
 
+.inner p:last-child {
+    font-size: 25px;
+    color: chartreuse;
+}
+
+selection.box > p + span {
+    font-size: x-small;
+    color: blue;
+}
+
 /*2*/
 .notebox  {
     border: 5px solid gray;
