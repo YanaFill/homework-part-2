@@ -1,0 +1,74 @@
+/*1*/
+
+span {
+    border: 2px solid blue;
+    background-color: lightblue;
+    padding: 15px;
+    margin: 10px;
+}
+.one {
+    display: inline;
+    margin: 10px;
+}
+.two {
+    display: inline-block;
+}
+.three {
+    display: block;
+    width: 60px;
+}
+
+p {
+    margin: 30px 5px;
+    border: 2px solid violet;
+    width: 27%;
+    float: left;
+    max-height: 200px;
+}
+
+
+/*2*/
+* {
+    margin: 0;
+}
+
+div {
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 225px;
+    margin-right: 100px;
+    border: 3px solid blue;
+    max-height: 500px;
+    max-width: 400px;
+    border-left: 3px dotted lightblue;
+    border-right: 3px double blueviolet;
+    border-top: 3px dashed blueviolet;
+    border-bottom: 3px solid hotpink;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+/* box-sizing зі значенням padding-box: зміна padding або border не впливає на загальний розмір блоку,
+а box-sizing зі значенням border-box: зміна padding або border змінює загальний розмір блоку. */
+
+.seasons > li {
+    list-style-image: url("znak.jpg");
+}
+
+.winter > li {
+    list-style-image: url("w.jpg");
+}
+.spring > li {
+    list-style-image: url("s.png");
+}
+.summer > li {
+    list-style-image: url("summer.jpg");
+}
+.autumn > li {
+    list-style-image: url("autumn.jpg");
+}
+h3 {
+    text-shadow: 2px 2px 8px #FF0000;
+    margin-bottom: 20px;
+}
+
