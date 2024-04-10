@@ -3,16 +3,15 @@
 }
 .block {
     width: 560px;
-    border: 2px solid lightblue;
-    background-color: lightblue;
-    opacity: 0.7;
+    border: 2px solid rgba(173, 216, 230, 0.7);;
+    background-color: rgba(173, 216, 230, 0.7);;
     margin: 0 auto;
     padding: 5px;
 
 }
 
 body {
-    background-image: url("background.jpg");
+    background-image: url("images/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -20,7 +19,7 @@ body {
 header {
     height: 200px;
     width: 100%;
-    background-image: url("background-h1.jpg");
+    background-image: url("images/background-h1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
