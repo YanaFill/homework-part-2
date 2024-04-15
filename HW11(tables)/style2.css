@@ -1,0 +1,71 @@
+table {
+    width: 80%;
+    min-width: 650px;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* прибираємо відступи між клітинками */
+    border-collapse: collapse;
+    /* встановлюємо системний шрифт для тексту */
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid grey;
+}
+
+caption {
+    /* вирівнюємо заголовок по горизонталі за правим краєм */
+    text-align: right;
+    /* переводимо текст у верхній регістр */
+    text-transform: uppercase;
+    /* встановлюємо колір заголовка таблиці */
+    color: #666666;
+    /* задаємо жирність шрифту */
+    font-weight: 700;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+ }
+
+ .col-1 {
+    background-color: #f0c545;
+    width: auto;
+}
+.col-2 {
+    background-color: #f0c545;
+    font-weight: bold;
+}
+.col-3 {
+    background-color: #5acfd1;
+    width: 30%;
+}
+.col-4 {
+    background-color: #ec5348;
+    width: 30%;
+}
+.col-5 {
+    background-color: #7ec96b;
+    width: 30%;
+}
+.col-6 {
+    background-color: #c25aa3;
+    width: 30%;
+}
+
+.row, .row-1 {
+    font-style: italic;
+}
+.question {
+    font-weight: 700;
+
+}
+.bold {
+    font-weight: bold;
+}
+
+.row-1 td:first-child {
+    font-style: normal;
+}
+.period {
+    font-size: 13px;
+}
+
