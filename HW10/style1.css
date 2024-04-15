@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+}
+
+.child {  
+    width: 100px; 
+    height: 100px; 
+    text-align: center;
+    color: white;
+  } 
+
+.one { 
+    background-color: navy;
+    position: absolute;
+    top: 0;
+    text-shadow: 2px 2px 2px rgb(207, 195, 195);
+  } 
+   
+  .two { 
+    background-color: teal;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-shadow: 2px 2px 2px rgb(48, 47, 47);
+  } 
+   
+  .three { 
+    background-color: aqua; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-shadow: 2px 2px 2px rgb(48, 47, 47);
+  } 
+   
+  .four { 
+    background-color: blue; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-shadow: 2px 2px 2px rgb(48, 47, 47);
+  }
+  .five {
+    background-color: rgb(144, 153, 153);
+    margin: 0 auto;
+    text-shadow: 2px 2px 2px rgb(48, 47, 47);
+
+  }
+  .box {
+    border: 2px solid black;
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: white;
+  }
+p {
+    text-align: center;
+    margin-top: 300px;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+ body {
+    background-color: lightgray;
+ }
