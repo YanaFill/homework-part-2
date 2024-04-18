@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    
+    <form class="form">
+        
+            <h2>Job Application Registration</h2>
+            <div class="container">
+                <div class="form-group">
+                    <label for="uname">Full Name:</label>
+                    <br clear="left">
+                    <input type="text" id="uname" name="uname" required minlength="2">
+                    <span></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <br clear="left">
+                    <input type="email" id="email" name="email" required minlength="2">
+                    <span></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="tel">Phone Number:</label>
+                    <br clear="left">
+                    <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <span></span>
+                </div>
+                <div class="form-group">
+                    <label for="resume">Resume(PDF or Word):</label>
+                    <br clear="left">
+                    <input type="file" id="resume" name="resume">
+                </div>
+                <div class="form-group">
+                    <label for="position">Position Applied:</label>
+                    <br clear="left">
+                    <select id="position" name="position">
+                        <option value="position">Select Position</option>
+                        <option value="position1">Position 1</option>
+                        <option value="position2">Position 2</option>
+                        <option value="position3">Position 3</option>
+                        <option value="position4">Position 4</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit Application">
+                </div>
+            </div>
+
+    
+    </form>
+
+</body>
+</html>

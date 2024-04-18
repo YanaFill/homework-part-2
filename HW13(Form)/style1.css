@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.form {
+    background-color: #72B7F4;
+    max-width: 400px;
+    padding: 1px;
+}
+.container {
+    background-color: #BFDDF7;
+    margin: 2px;
+    padding-top: 5px;
+}
+input[type="submit"] {
+    background-color: #1A73F8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    width: 40%;
+}
+.form-group {
+    margin: 15px;
+}
+
+input:invalid{
+    content: "✖";
+    color: red;
+  }
+  
+  input:valid + span::before {
+    content: "✓";
+    color: green;
+  }
+
+input, select {
+    width: 90%;
+    border: 0;
+    padding: 10px;
+    background-color: white;
+}
+h2 {
+    text-align: center;
+}

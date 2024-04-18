@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <form class="form">
+    <h2>CLASSIC FILTER FORM</h2>
+    <div class="container">
+        <div class="form-group">
+            <label for="position">Month of Birth:</label>
+            <br clear="left">
+                <select id="position" name="position">
+                <option value="position">Please select</option>
+                <option value="position1">January</option>
+                <option value="position2">February</option>
+                <option value="position3">March</option>
+                <option value="position4">April</option>
+                <option value="position1">May</option>
+                <option value="position2">June</option>
+                <option value="position3">July</option>
+                <option value="position4">August</option>
+                <option value="position1">September</option>
+                <option value="position2">October</option>
+                <option value="position3">November</option>
+                <option value="position4">December</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="year">Year of Birth:</label>
+            <br clear="left">
+            <select name="year" id="year" multiple>
+                <option value="year1">2015</option>
+                <option value="year2">2016</option>
+                <option value="year3">2017</option>
+                <option value="year4">2018</option>
+                <option value="year5">2019</option>
+                <option value="year6">2020</option>
+                <option value="year7">2021</option>
+                <option value="year8">2022</option>
+                <option value="year9">2023</option>
+                <option value="year10">2024</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="gender">Gender</label>
+            <br clear="left">
+            <input type="radio" name="gender" id="gender1">Male
+            <br clear="left">
+            <input type="radio" name="gender" id="gender2">Female
+        </div>
+
+        <div  class="form-group">
+            <label for="documents">Documents</label>
+            <br clear="left">
+            <input type="checkbox" name="documents" id="documents1">Driving licence
+            <br clear="left">
+            <input type="checkbox" name="documents" id="documents2">Passport
+            <br clear="left">
+            <input type="checkbox" name="documents" id="documents3">Carry premit
+        </div>
+
+        <div class="form-group">
+            <label for="uname">Name</label>
+            <br clear="left">
+            <input type="text" id="uname" name="uname" autocomplete="additional-name">
+        </div>
+    </div>
+
+    <div class="button">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Apply">
+    </div>
+
+</form>
+</body>
+</html>
