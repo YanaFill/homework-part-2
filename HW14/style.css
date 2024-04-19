@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.main {
+    border: 2px solid black;
+    max-width: 1278px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+h1 {
+    color: #FD7D54;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 78.02px;
+    letter-spacing: 0.3em;
+    text-align: center;
+    margin-top: 40px;
+}
+pre {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+}
+.matte {
+    margin: 50px;
+    display: inline-block;
+    border: 4px solid white;
+    width: 293px;
+    max-height: 440px;
+    
+}
+h3 {
+    font-family: Montserrat;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 32.91px;
+    letter-spacing: 0.12em;
+    text-align: center;
+
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 20px;
+
+}
+  
+
+.elipse {
+    
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 127px;
+    height: 127px;
+    margin-bottom: 30px;
+}
+
+.elipse1 {
+    background-image: url(elipse1.png);
+} 
+
+.elipse2 {
+    background-image: url(elips.png);
+}
+
+.elipse3 {
+    background-image: url(elipse3.png);
+}
+.line {
+    width: 23px;
+    border: 3px solid white;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.rectangle {
+    width: 159px;
+    height: 50px;
+    gap: 0px;
+    border: 1px solid black;
+    opacity: 0px;
+    margin: 0 auto;
+
+}
+
+.explore {
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 23.16px;
+    letter-spacing: 0.12em;
+    margin: 0 auto;
+    color: #41C3F6;
+    cursor: pointer;
+}
+.diamond {
+    background-image: url(header.png);
+    width: 59px;
+    height: 59px;
+
+}
+.header {
+    height: 101px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}   
+
+.link a{
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 23.16px;
+    letter-spacing: 0.12em;
+    text-align: center;
+
+}
+
+.footer {
+    width: 100%;
+    height: 42px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.63px;
+    letter-spacing: 0.1em;
+}
