@@ -1,0 +1,11 @@
+{% block content %}
+{% for film in films %}
+<p>
+    {{film.id}}
+    <a href="{% url 'films:about_film' film.id %}">{{film.title}}</a>
+{{film.year}}
+{{film.genre}}</p>
+<hr>
+
+{% endfor %}
+{% endblock %}
