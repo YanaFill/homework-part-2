@@ -1,0 +1,28 @@
+body {
+      font-family: "Gill Sans", sans-serif;
+}
+
+.checked {
+  color: orange;
+}
+.filters {
+    display: flex;
+    color: grey;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.filter {
+    margin-right: 22px;
+}
+
+.filter a {
+    color: grey;
+
+}
+
+.filter a:hover{
+    color: orange;
+    transition: 0.5s;
+}
