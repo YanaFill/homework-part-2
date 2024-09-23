@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Деталі предмета{% endblock %}
+
+{% block content %}
+<h1>{{ subject.name }}</h1>
+<p><strong>Викладач:</strong> {{ subject.teacher }}</p>
+<p><strong>Тип заняття:</strong> {{ subject.lesson_type.name }}</p>
+<p><strong>Контроль:</strong> {{ subject.control }}</p>
+<p><strong>Спеціальність:</strong> {{ subject.specialty }}</p>
+<p><strong>Семестр:</strong> {{ subject.semester }}</p>
+{% if subject.image %}
+<img src="{{ subject.image.url }}" alt="{{ subject.name }}">
+{% endif %}
+<a href="{% url 'subject_edit' subject.pk %}" class="btn btn-primary">Редагувати</a>
+<a href="{% url 'subject_delete' subject.pk %}" class="btn btn-danger">Видалити</a>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Список предметів{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="my-4">Список предметів</h2>
+
+    <form method="GET" class="mb-3">
+        <input type="text" name="q" class="form-control" placeholder="Пошук за назвою або викладачем" value="{{ request.GET.q }}">
+    </form>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Назва</th>
+                <th>Викладач</th>
+                <th>Тип заняття</th>
+                <th>Контроль</th>
+                <th>Спеціальність</th>
+                <th>Семестр</th>
+                <th>Дії</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for subject in subjects %}
+            <tr>
+                <td>{{ subject.name }}</td>
+                <td>{{ subject.teacher }}</td>
+                <td>{{ subject.lesson_type.name }}</td>
+                <td>{{ subject.control }}</td>
+                <td>{{ subject.specialty }}</td>
+                <td>{{ subject.semester }}</td>
+                <td>
+                    <a href="{% url 'subject_detail' subject.pk %}" class="btn btn-info btn-sm">Деталі</a>
+                    <a href="{% url 'subject_edit' subject.pk %}" class="btn btn-warning btn-sm">Редагувати</a>
+                    <a href="{% url 'subject_delete' subject.pk %}" class="btn btn-danger btn-sm">Видалити</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

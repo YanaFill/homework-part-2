@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Підтвердження видалення{% endblock %}
+
+{% block content %}
+<h1>Ви дійсно хочете видалити {{ subject.name }}?</h1>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Так, видалити</button>
+    <a href="{% url 'subject_detail' subject.pk %}" class="btn btn-secondary">Скасувати</a>
+</form>
+{% endblock %}
