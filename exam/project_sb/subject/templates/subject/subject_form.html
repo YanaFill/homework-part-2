@@ -3,10 +3,33 @@
 {% block title %}Додати предмет{% endblock %}
 
 {% block content %}
-<h1>Додати предмет</h1>
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="btn btn-success">Зберегти</button>
-</form>
+<style>
+    .form-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .btn-success {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+</style>
+
+<div class="form-container">
+    <h1>Додати предмет</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Зберегти</button>
+    </form>
+</div>
 {% endblock %}

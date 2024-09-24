@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}Профіль користувача{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header text-center bg-primary text-white">
+                    <h3>Профіль користувача</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <!-- Відображення фотографії профілю -->
+                            {% if user.profile.photo %}
+                                <img src="{{ user.profile.photo.url }}" class="rounded-circle mb-3" alt="Фото профілю" width="150" height="150">
+                            {% else %}
+                                <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Фото профілю">
+                            {% endif %}
+                        </div>
+                        <div class="col-md-8">
+                            <!-- Відомості про користувача -->
+                            <h4>Привіт, {{ user.username }}!</h4>
+                            <p><strong>Електронна адреса:</strong> {{ user.email }}</p>
+                            <p><strong>Дата приєднання:</strong> {{ user.date_joined|date:"d.m.Y" }}</p>
+
+                            <!-- Форма для завантаження нової фотографії -->
+                            <form method="POST" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+<!--                                <button type="submit" class="btn btn-success">Завантажити нову фотографію</button>-->
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Кнопка для зміни пароля -->
+                    <div class="text-center">
+                        <a href="{% url 'password_change' %}" class="btn btn-warning btn-lg">Змінити пароль</a>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="{% url 'subject_list' %}" class="btn btn-secondary">Повернутися до предметів</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
