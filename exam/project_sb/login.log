@@ -2566,3 +2566,5 @@ Not Found: /favicon.ico
 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 C:\Users\янусик\Desktop\ItStep\exam\project_sb\subject\admin.py changed, reloading.
 Watching for file changes with StatReloader
+"GET /subject/new/ HTTP/1.1" 200 4754
+"GET / HTTP/1.1" 200 8164
