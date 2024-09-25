@@ -1934,3 +1934,123 @@ Not Found: /favicon.ico
 "GET / HTTP/1.1" 200 8203
 Not Found: /favicon.ico
 "GET /favicon.ico HTTP/1.1" 404 3902
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8203
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET /subject/new/ HTTP/1.1" 200 4793
+"GET /accounts/profile/ HTTP/1.1" 200 4785
+"GET /subject/new/ HTTP/1.1" 200 4793
+"GET / HTTP/1.1" 200 8203
+"GET /subject/new/ HTTP/1.1" 200 4793
+"GET /accounts/profile/ HTTP/1.1" 200 4785
+"GET /accounts/password_change/ HTTP/1.1" 200 3838
+"GET / HTTP/1.1" 200 8203
+"GET / HTTP/1.1" 200 8203
+"GET /subject/new/ HTTP/1.1" 200 4793
+"GET / HTTP/1.1" 200 8203
+"GET /subject/new/ HTTP/1.1" 200 4793
+"GET /accounts/profile/ HTTP/1.1" 200 4785
+"GET /subject/new/ HTTP/1.1" 200 4793
+"GET /accounts/profile/ HTTP/1.1" 200 4785
+"GET / HTTP/1.1" 200 8203
+"GET /subject/new/ HTTP/1.1" 200 4793
+"GET /accounts/profile/ HTTP/1.1" 200 4785
+"GET / HTTP/1.1" 200 8203
+"GET /accounts/profile/ HTTP/1.1" 200 4785
+"GET /subject/new/ HTTP/1.1" 200 4793
+"GET /accounts/profile/ HTTP/1.1" 200 4785
+"GET / HTTP/1.1" 200 8203
+Forbidden: /subject/5/edit/
+"GET /subject/5/edit/ HTTP/1.1" 403 62
+C:\Users\янусик\Desktop\ItStep\exam\project_sb\subject\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8203
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET /subject/7/edit/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 8344
+"GET /subject/6/delete/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 8340
+"GET /subject/12/ HTTP/1.1" 200 2899
+"GET /subject/12/ HTTP/1.1" 200 2899
+"GET / HTTP/1.1" 200 8203
+"GET /subject/10/ HTTP/1.1" 200 2941
+"GET /subject/12/ HTTP/1.1" 200 2943
+"GET /subject/12/ HTTP/1.1" 200 2943
+"GET /subject/6/ HTTP/1.1" 200 3045
+"GET /media/subject_images/1-dancing-banana_YHGDIhV.gif HTTP/1.1" 304 0
+"GET /subject/12/ HTTP/1.1" 200 2943
+"GET /subject/7/ HTTP/1.1" 200 3047
+"GET /media/subject_images/1-dancing-banana_HL6krxs.gif HTTP/1.1" 304 0
+"GET /subject/7/edit/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 8344
+"GET / HTTP/1.1" 200 8203
+"GET /accounts/profile/ HTTP/1.1" 200 4785
+C:\Users\янусик\Desktop\ItStep\exam\project_sb\project_sb\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /accounts/profile/ HTTP/1.1" 200 4832
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET /accounts/profile/ HTTP/1.1" 200 4845
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET /accounts/profile/ HTTP/1.1" 200 4872
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8290
+"GET / HTTP/1.1" 200 8290
+"GET / HTTP/1.1" 200 8290
+"GET / HTTP/1.1" 200 8290
+"GET / HTTP/1.1" 200 8290
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8311
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8311
+"GET /subject/new/ HTTP/1.1" 200 4901
+"GET / HTTP/1.1" 200 8311
+"GET /subject/new/ HTTP/1.1" 200 4901
+"GET / HTTP/1.1" 200 8311
+"GET / HTTP/1.1" 200 8311
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8153
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8153
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8153
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8153
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8153
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8153
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8153
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8153
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902

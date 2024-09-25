@@ -40,7 +40,8 @@ def subject_create(request):
 def subject_edit(request, pk):
     subject = get_object_or_404(Subject, pk=pk)
     if subject.author != request.user:
-        return HttpResponseForbidden("Ви не можете редагувати цей запис.")
+        messages.error(request, "Ви не можете редагувати цей предмет.")
+        return redirect('subject_list')
     if request.method == 'POST':
         form = SubjectForm(request.POST, request.FILES, instance=subject)
         if form.is_valid():
@@ -57,7 +58,8 @@ def subject_edit(request, pk):
 def subject_delete(request, pk):
     subject = get_object_or_404(Subject, pk=pk)
     if subject.author != request.user:
-        return HttpResponseForbidden("Ви не можете видалити цей запис.")
+        messages.error(request, "Ви не можете видалити цей предмет.")
+        return redirect('subject_list')
     if request.method == 'POST':
         subject.delete()
         messages.success(request, "Предмет було успішно видалено.")
