@@ -14,8 +14,8 @@
                     <div class="row">
                         <div class="col-md-4 text-center">
                             <!-- Відображення фотографії профілю -->
-                            {% if user.profile.photo %}
-                                <img src="{{ user.profile.photo.url }}" class="rounded-circle mb-3" alt="Фото профілю" width="150" height="150">
+                            {% if user.userprofile.profile_picture %}
+                                <img src="{{ user.userprofile.profile_picture.url }}" class="rounded-circle mb-3" alt="Фото профілю" width="150" height="150">
                             {% else %}
                                 <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Фото профілю">
                             {% endif %}
@@ -30,7 +30,7 @@
                             <form method="POST" enctype="multipart/form-data">
                                 {% csrf_token %}
                                 {{ form.as_p }}
-<!--                                <button type="submit" class="btn btn-success">Завантажити нову фотографію</button>-->
+                                <button type="submit" class="btn btn-success">Завантажити нову фотографію</button>
                             </form>
                         </div>
                     </div>

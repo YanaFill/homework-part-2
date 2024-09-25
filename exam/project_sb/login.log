@@ -2054,3 +2054,515 @@ Not Found: /favicon.ico
 "GET /media/local_images/logo.png HTTP/1.1" 200 15910
 Not Found: /favicon.ico
 "GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8091
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8091
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8091
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8091
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8091
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8091
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8096
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8096
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\project_sb\subject\views.py", line 16, in subject_list
+    return render(request, 'subject/subject_list.html', {'subjects': subjects})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 586, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 30: 'if'. Looking for one of: elif, else, endif.
+"GET / HTTP/1.1" 500 189661
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\project_sb\subject\views.py", line 16, in subject_list
+    return render(request, 'subject/subject_list.html', {'subjects': subjects})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\template\base.py", line 586, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 30: 'if'. Looking for one of: elif, else, endif.
+"GET / HTTP/1.1" 500 189661
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8173
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET /accounts/profile/ HTTP/1.1" 200 4755
+"GET /accounts/logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 8092
+"GET /accounts/login/ HTTP/1.1" 200 3265
+ ористувач Yana ув≥йшов у систему.
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 200 4750
+"GET /accounts/profile/ HTTP/1.1" 200 4869
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET /accounts/profile/ HTTP/1.1" 200 4869
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET /accounts/logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 7978
+"GET / HTTP/1.1" 200 8106
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8106
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8106
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET / HTTP/1.1" 200 8075
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET /accounts/login/ HTTP/1.1" 200 3248
+ ористувач Yana ув≥йшов у систему.
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 200 4741
+"GET / HTTP/1.1" 200 8164
+"GET /accounts/profile/ HTTP/1.1" 200 4741
+C:\Users\янусик\Desktop\ItStep\exam\project_sb\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\янусик\Desktop\ItStep\exam\project_sb\accounts\apps.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\янусик\Desktop\ItStep\exam\project_sb\project_sb\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /accounts/profile/
+Traceback (most recent call last):
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 512, in __get__
+    rel_obj = self.related.get_cached_value(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\models\fields\mixins.py", line 37, in get_cached_value
+    return instance._state.fields_cache[self.cache_name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'userprofile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: accounts_userprofile
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\project_sb\accounts\views.py", line 25, in profile
+    user_profile = request.user.userprofile
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 520, in __get__
+    rel_obj = self.get_queryset(instance=instance).get(**filter_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: accounts_userprofile
+"GET /accounts/profile/ HTTP/1.1" 500 155455
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+Watching for file changes with StatReloader
+Internal Server Error: /accounts/profile/
+Traceback (most recent call last):
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\project_sb\accounts\views.py", line 25, in profile
+    user_profile = request.user.userprofile
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.userprofile.RelatedObjectDoesNotExist: User has no userprofile.
+"GET /accounts/profile/ HTTP/1.1" 500 79912
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+Internal Server Error: /accounts/profile/
+Traceback (most recent call last):
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\project_sb\accounts\views.py", line 25, in profile
+    user_profile = request.user.userprofile
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\янусик\Desktop\ItStep\exam\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.userprofile.RelatedObjectDoesNotExist: User has no userprofile.
+"GET /accounts/profile/ HTTP/1.1" 500 79912
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+Watching for file changes with StatReloader
+"GET /accounts/profile/ HTTP/1.1" 200 4915
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"POST /accounts/profile/ HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 200 5172
+"GET /media/profile_pictures/Yana.jpg HTTP/1.1" 200 149030
+"GET /accounts/logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 8075
+"GET /accounts/login/ HTTP/1.1" 200 3248
+ ористувач MissFox ув≥йшов у систему.
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 200 4920
+"POST /accounts/profile/ HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 200 5186
+"GET /media/profile_pictures/MissFox.jpg HTTP/1.1" 200 155989
+"GET /media/profile_pictures/MissFox.jpg HTTP/1.1" 304 0
+"POST /accounts/profile/ HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 200 4920
+"POST /accounts/profile/ HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 200 5210
+"GET /media/profile_pictures/MissFox_UiKRjte.jpg HTTP/1.1" 200 155989
+"GET /accounts/logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 8075
+"GET /accounts/login/ HTTP/1.1" 200 3248
+ ористувач Yana ув≥йшов у систему.
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 200 5172
+"GET /media/profile_pictures/Yana.jpg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 8164
+"GET /subject/12/ HTTP/1.1" 200 2904
+"GET /subject/2/ HTTP/1.1" 200 3020
+"GET /media/subject_images/1-dancing-banana.gif HTTP/1.1" 304 0
+"GET /subject/4/ HTTP/1.1" 200 3042
+"GET /media/subject_images/1-dancing-banana_4dDTNwl.gif HTTP/1.1" 304 0
+"GET /subject/4/edit/ HTTP/1.1" 200 5109
+"POST /subject/4/edit/ HTTP/1.1" 302 0
+"GET /subject/4/ HTTP/1.1" 200 3069
+"GET /subject/4/edit/ HTTP/1.1" 200 4872
+"GET / HTTP/1.1" 200 8164
+"GET /subject/4/ HTTP/1.1" 200 2938
+"GET /subject/5/ HTTP/1.1" 200 2998
+"GET /media/subject_images/1-dancing-banana_zsELIRl.gif HTTP/1.1" 304 0
+"GET /subject/5/edit/ HTTP/1.1" 200 5088
+"POST /subject/5/edit/ HTTP/1.1" 302 0
+"GET /subject/5/ HTTP/1.1" 200 3038
+"GET / HTTP/1.1" 200 8164
+"GET /subject/6/edit/ HTTP/1.1" 200 5090
+"POST /subject/6/edit/ HTTP/1.1" 302 0
+"GET /subject/6/ HTTP/1.1" 200 3048
+"GET / HTTP/1.1" 200 8164
+"GET /subject/7/edit/ HTTP/1.1" 200 5094
+"POST /subject/7/edit/ HTTP/1.1" 302 0
+"GET /subject/7/ HTTP/1.1" 200 3050
+"GET / HTTP/1.1" 200 8164
+"GET /subject/9/edit/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 8294
+"GET /accounts/logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 8075
+"GET /accounts/login/ HTTP/1.1" 200 3248
+ ористувач MissFox ув≥йшов у систему.
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET /accounts/profile/ HTTP/1.1" 200 5210
+"GET /media/profile_pictures/MissFox_UiKRjte.jpg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 8164
+"GET /subject/9/edit/ HTTP/1.1" 200 4845
+"GET /subject/10/edit/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 8294
+"GET /subject/12/edit/ HTTP/1.1" 200 4837
+"GET / HTTP/1.1" 200 8164
+"GET /subject/10/ HTTP/1.1" 200 2902
+"GET /media/local_images/logo.png HTTP/1.1" 304 0
+"GET /subject/2/ HTTP/1.1" 200 3020
+"GET /subject/4/ HTTP/1.1" 200 2938
+"GET /subject/5/ HTTP/1.1" 200 2907
+"GET /subject/6/ HTTP/1.1" 200 2917
+"GET /subject/7/ HTTP/1.1" 200 2919
+"GET /subject/9/ HTTP/1.1" 200 2918
+"GET /subject/10/ HTTP/1.1" 200 2902
+"GET /subject/12/ HTTP/1.1" 200 2904
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 3676
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 3839
+ ористувач Yana ув≥йшов у систему.
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 9498
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /admin/auth/user/ HTTP/1.1" 200 12640
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/subject/subject/ HTTP/1.1" 200 11560
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+C:\Users\янусик\Desktop\ItStep\exam\project_sb\subject\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\янусик\Desktop\ItStep\exam\project_sb\subject\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8164
+"GET /media/local_images/logo.png HTTP/1.1" 200 15910
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET /admin/subject/subject/ HTTP/1.1" 200 16534
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/css/base.css HTTP/1.1" 200 22092
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+"GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3902
+"GET /admin/subject/subject/ HTTP/1.1" 200 16534
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+C:\Users\янусик\Desktop\ItStep\exam\project_sb\subject\admin.py changed, reloading.
+Watching for file changes with StatReloader
